@@ -1,0 +1,40 @@
+#include "Person.h"
+#include <string>
+
+using namespace std;
+
+class Person
+{
+public:
+    int anrede;
+    string vorname;
+    string nachname;
+    string strasse;
+    string hausnr;
+    string ort;
+    string universitaet;
+    string land;
+};
+public:
+    Person::Person(int a) : anrede(a){}
+
+    Person::Person(int a, string v): anrede(a),vorname(v){ }
+
+    Person::Person(int a, string v, string n) :anrede(a), vorname(v), nachname(n){}
+
+    Person::Person(int a, string v, string n, string s):
+        anrede(a), vorname(v), nachname(n), strasse(s){}
+
+    Person::Person(int a, string v, string n, string s, string h):
+        anrede(a), vorname(v), nachname(n), strasse(s), hausnr(h){}
+
+
+    Person::Person(int a, string v, string n, string s, string h, string o):
+        anrede(a), vorname(v), nachname(n), strasse(s), hausnr(h), ort(s){}
+
+    Person::Person(int a, string v, string n, string s, string h, string o, string l):
+        anrede(a), vorname(v), nachname(n), strasse(s), hausnr(h), ort(s), land(l){}
+
+    Person::Person(int a, string v, string n, string s, string h, string o, string l, string u):
+        anrede(a), vorname(v), nachname(n), strasse(s), hausnr(h), ort(s), land(l), universitaet(u){}
+
