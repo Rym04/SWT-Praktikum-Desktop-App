@@ -1,12 +1,13 @@
 #include "ausleihvorgang.h"
 
-Ausleihvorgang::Ausleihvorgang(string bestellung)
+Ausleihvorgang::Ausleihvorgang(string bestellungsId, Ausleihender ausleihender, Status status,
+                               Katalogliste medien, tm datum, tm datumFertig)
 {
-        bestellungsId = bestellung;
-        ausleihender = ; //SQL-Abfrage
-        status = ; //SQL-Abfrage
-        medien = ; //SQL-Abfrage
-        datum = ; //SQL-Abfrage
-        datumFertig = ; //SQL-Abfrage
+        this->bestellungsId = bestellungsId;
+        this->ausleihender = ausleihender;
+        this->status = status;
+        this->medien = medien;
+        this->datum = datum;
+        this->datumFertig = datumFertig;
 }
 

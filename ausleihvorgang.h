@@ -14,7 +14,8 @@ public:
     tm datum; //aus ctime, Date gibt es in C++ nicht
     tm datumFertig; //aus ctime, Date gibt es in C++ nicht
 
-    Ausleihvorgang(string bestellung);
+    Ausleihvorgang(string bestellungsId, Ausleihender ausleihender, Status status,
+                                   Katalogliste medien, tm datum, tm datumFertig);
 };
 
 #endif // AUSLEIHVORGANG_H
