@@ -22,7 +22,6 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
       </property>
       <widget class="QWidget" name="Home">
        <widget class="QFrame" name="frameStart">
@@ -490,6 +489,80 @@
         </layout>
        </widget>
       </widget>
+      <widget class="QWidget" name="Mediendatei_Hinzufuegen">
+       <widget class="QLabel" name="lab_docID">
+        <property name="geometry">
+         <rect>
+          <x>17</x>
+          <y>160</y>
+          <width>207</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Dokument ID</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_add_media">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>160</y>
+          <width>207</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lab_media">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Mediendatei hinzufügen</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_save_media">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>490</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Speichern</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_datei_waehlen">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>150</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Datei wählen</string>
+        </property>
+       </widget>
+      </widget>
       <widget class="QWidget" name="Editieren">
        <widget class="QWidget" name="layoutWidget_3">
         <property name="geometry">
@@ -501,6 +574,33 @@
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_11">
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>Tagung</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="lineEdit_18"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>Titel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLineEdit" name="lineEdit_19"/>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>Verlag</string>
+           </property>
+          </widget>
+         </item>
          <item row="4" column="2">
           <widget class="QLineEdit" name="lineEdit_20"/>
          </item>
@@ -583,35 +683,15 @@
            </item>
           </widget>
          </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_31">
+         <item row="6" column="3">
+          <widget class="QLabel" name="label_39">
            <property name="text">
-            <string>Tagung</string>
+            <string>Kommentar (sichtbar)</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="2">
-          <widget class="QLineEdit" name="lineEdit_18"/>
-         </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_30">
-           <property name="text">
-            <string>Verlag</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="QLineEdit" name="lineEdit_19"/>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_32">
-           <property name="text">
-            <string>Titel</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="2">
-          <widget class="QLineEdit" name="lineEdit_21"/>
+         <item row="6" column="5">
+          <widget class="QLineEdit" name="lineEdit_32"/>
          </item>
          <item row="4" column="3">
           <widget class="QLabel" name="label_41">
@@ -620,41 +700,14 @@
            </property>
           </widget>
          </item>
-         <item row="6" column="5">
-          <widget class="QLineEdit" name="lineEdit_32"/>
+         <item row="6" column="2">
+          <widget class="QLineEdit" name="lineEdit_21"/>
          </item>
          <item row="5" column="5">
           <widget class="QLineEdit" name="lineEdit_33"/>
          </item>
-         <item row="6" column="3">
-          <widget class="QLabel" name="label_39">
-           <property name="text">
-            <string>Kommentar (sichtbar)</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="3">
-          <widget class="QLabel" name="label_40">
-           <property name="text">
-            <string>Auflage</string>
-           </property>
-          </widget>
-         </item>
          <item row="2" column="5">
           <widget class="QLineEdit" name="lineEdit_28"/>
-         </item>
-         <item row="10" column="3">
-          <spacer name="horizontalSpacer_12">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
          </item>
          <item row="10" column="5">
           <widget class="QPushButton" name="pushButton_14">
@@ -669,6 +722,33 @@
          <item row="3" column="5">
           <widget class="QLineEdit" name="lineEdit_27"/>
          </item>
+         <item row="10" column="3">
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLabel" name="label_40">
+           <property name="text">
+            <string>Auflage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="3">
+          <widget class="QLabel" name="label_37">
+           <property name="text">
+            <string>Kommentar (intern)</string>
+           </property>
+          </widget>
+         </item>
          <item row="4" column="5">
           <widget class="QLineEdit" name="lineEdit_29"/>
          </item>
@@ -682,45 +762,32 @@
            </property>
           </widget>
          </item>
-         <item row="9" column="3">
-          <widget class="QLabel" name="label_37">
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_36">
            <property name="text">
-            <string>Kommentar (intern)</string>
+            <string>Erscheinungsort</string>
            </property>
           </widget>
          </item>
-         <item row="8" column="5">
-          <widget class="QCheckBox" name="checkBox_5">
+         <item row="9" column="2">
+          <widget class="QLineEdit" name="lineEdit_25"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_35">
            <property name="text">
-            <string>als Datei vorhanden</string>
+            <string>Band</string>
            </property>
           </widget>
          </item>
-         <item row="8" column="3">
-          <spacer name="horizontalSpacer_13">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="7" column="5">
-          <widget class="QLineEdit" name="lineEdit_31"/>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLineEdit" name="lineEdit_17"/>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_28">
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_33">
            <property name="text">
-            <string>Dokumentennummer</string>
+            <string>Untertitel</string>
            </property>
           </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="lineEdit_22"/>
          </item>
          <item row="8" column="0">
           <widget class="QLabel" name="label_29">
@@ -808,17 +875,16 @@
            </item>
           </widget>
          </item>
-         <item row="3" column="3">
-          <widget class="QLabel" name="label_42">
-           <property name="text">
-            <string>Seiten</string>
-           </property>
-          </widget>
+         <item row="7" column="5">
+          <widget class="QLineEdit" name="lineEdit_31"/>
          </item>
-         <item row="2" column="3">
-          <widget class="QLabel" name="label_43">
+         <item row="0" column="5">
+          <widget class="QLineEdit" name="lineEdit_17"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_28">
            <property name="text">
-            <string>Ausgabe</string>
+            <string>Dokumentennummer</string>
            </property>
           </widget>
          </item>
@@ -829,43 +895,276 @@
            </property>
           </widget>
          </item>
-         <item row="8" column="2">
-          <widget class="QLineEdit" name="lineEdit_24"/>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_43">
+           <property name="text">
+            <string>Ausgabe</string>
+           </property>
+          </widget>
          </item>
          <item row="7" column="2">
           <widget class="QLineEdit" name="lineEdit_23"/>
          </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_33">
+         <item row="3" column="3">
+          <widget class="QLabel" name="label_42">
            <property name="text">
-            <string>Untertitel</string>
+            <string>Seiten</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="2">
-          <widget class="QLineEdit" name="lineEdit_22"/>
-         </item>
-         <item row="10" column="0">
-          <widget class="QLabel" name="label_36">
-           <property name="text">
-            <string>Erscheinungsort</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="0">
-          <widget class="QLabel" name="label_35">
-           <property name="text">
-            <string>Band</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="2">
-          <widget class="QLineEdit" name="lineEdit_25"/>
+         <item row="8" column="2">
+          <widget class="QLineEdit" name="lineEdit_24"/>
          </item>
          <item row="0" column="2">
           <widget class="QLineEdit" name="lineEdit_34"/>
          </item>
+         <item row="8" column="5">
+          <widget class="QCheckBox" name="checkBox_5">
+           <property name="text">
+            <string>als Datei vorhanden</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
+          <spacer name="horizontalSpacer_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Einzel_Ansicht">
+       <widget class="QTableView" name="tv_doc_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>771</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lab_doc_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Einzelansicht</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_close_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>500</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Schließen</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_mail_angefragt">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>310</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-Mail - Vorlage_angefragt</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_inBearbeitung_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>350</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>in Bearbeitung</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_versendet_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>92</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>versendet</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_angefragt_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>angefragt</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_abgelehnt_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>390</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>abgelehnt</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_mail_inBearbeitung">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>350</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>       E-Mail - Vorlage_in_Bearbeitung</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_mail_abgelehnt">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>390</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-Mail - Vorlage_abgelehnt</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_mail_versendet">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>430</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-Mail - Vorlage_versendet</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_mail_plain">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>310</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-Mail</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_media">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>510</y>
+          <width>291</width>
+          <height>21</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="cb_media_einzelansicht">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>500</y>
+          <width>191</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Mediendatei vorhanden</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lab_filepath">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>485</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Dateipfad</string>
+        </property>
        </widget>
       </widget>
      </widget>
