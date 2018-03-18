@@ -2,6 +2,7 @@
 #define AUSLEIHLISTE_H
 
 #include <vector>
+#include "ausleihvorgang.h"
 using namespace std;
 
 class Ausleihliste

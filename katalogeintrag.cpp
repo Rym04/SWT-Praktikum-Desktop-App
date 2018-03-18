@@ -1,73 +1,55 @@
 #include "katalogeintrag.h"
 
-Katalogeintrag::Katalogeintrag(string dokumentId, string dokumentAutoren[], int jahr,
-                               int revision, int buchband, int zustand, string titel,
-                               string untertitel, string beschreibung, string copyright,
-                               string dokumentart, int ausfertigung, string konferenz,
-                               string sammelbandAutoren[], int anzahlSammelbandAutoren,
-                               string titel_sammelband, string zeitschrift, string ort,
-                               string verlag, string seiten, int bestand, string notizen,
-                               string kommentar, tm aenderungsdatum)
+Katalogeintrag::Katalogeintrag()
 {
-    this->dokumentId = dokumentId;
-
-    this->dokumentAutoren = new string[anzahlDokumentAutoren];
-    for (int i = 0; i<anzahlDokumentAutoren, i++)
-    {
-        this->dokumentAutoren[i] = dokumentAutoren[i];
-    }
-
-    this->jahr = jahr;
-    this->revision = revision;
-    this->buchband = buchband;
-    this->zustand = zustand;
-    this->titel = titel;
-    this->untertitel = untertitel;
-    this->beschreibung = beschreibung;
-    this->copyright = copyright;
-    this->dokumentart = dokumentart;
-    this->ausfertigung = ausfertigung;
-    this->konferenz = konferenz;
-
-    this->sammelbandAutoren = new string [anzahlSammelbandAutoren];
-    for (int i = 0; i<anzahlSammelbandAutoren; i++)
-        this->sammelbandAutoren[i] = sammelbandAutoren[i];
-    }
-
-    this->titel_sammelband = titel_sammelband;
-    this->zeitschrift = zeitschrift;
-    this->ort = ort;
-    this->verlag = verlag; //in ER-Diagramm "veroeffentlicher"
-    this->seiten = seiten;
-    this->bestand = bestand;
-    this->notizen = notizen;
-    this->kommentar = kommentar;
-    this->aenderungsdatum = aenderungsdatum;
+   dokumentId=0;
+   jahr=0;
+   revision=0;
+   buchband=0;
+   auflage=0;
+   zustand=0;
+   copyright="";
+   dokumentart="";
+   zeitschrift="";
+   erscheinungsort="";
+   konferenz="";
+   verlag="";
+   seiten="";
+   bestand=0;
+   titelSammelband="";
+   aenderungsdatum="";
+   titel="";
+   untertitel="";
+   beschreibung="";
+   notizen="";
+   kommentar="";
+   ordnerpfad="";
 }
-
-
-Katalogeintrag::Katalogeintrag(string dokumentId, string dokumentAutoren[],
-                               int anzahlDokumentAutoren, int jahr, int revision, int buchband,
-                               int zustand, string titel, string copyright, int ausfertigung,
-                               int bestand, string notizen, string kommentar, tm aenderungsdatum)
+Katalogeintrag::Katalogeintrag(const int id, const int &j, const int &r, const int &b, const int &a, const int &zu, const QString &c,
+                               const QString &d, const QString &ze, const QString &er, const QString &k, const QString& v,
+                               const QString &s, const int &be, const QString &ts, const QString &ad, const QString& t,
+                               const QString &ut, const QString &bg, const QString &n, const QString &kr, const QString &op)
 {
-    this->dokumentId = dokumentId;
-
-    this->dokumentAutoren = new string[anzahlDokumentAutoren];
-    for (int i = 0; i<anzahlDokumentAutoren, i++)
-    {
-        this->dokumentAutoren[i] = dokumentAutoren[i];
-    }
-
-    this->jahr = jahr;
-    this->revision = revision;
-    this->buchband = buchband;
-    this->zustand = zustand;
-    this->titel = titel;
-    this->copyright = copyright;
-    this->ausfertigung = ausfertigung;
-    this->bestand = bestand;
-    this->notizen = notizen;
-    this->kommentar = kommentar;
-    this->aenderungsdatum = aenderungsdatum;
+   dokumentId=id;
+   jahr=j;
+   revision=r;
+   buchband=b;
+   auflage=a;
+   zustand=zu;
+   copyright=c;
+   dokumentart=d;
+   zeitschrift=ze;
+   erscheinungsort=er;
+   konferenz=k;
+   verlag=v;
+   seiten=s;
+   bestand=be;
+   titelSammelband=ts;
+   aenderungsdatum=ad;
+   titel=t;
+   untertitel=ut;
+   beschreibung=bg;
+   notizen=n;
+   kommentar=kr;
+   ordnerpfad=op;
 }

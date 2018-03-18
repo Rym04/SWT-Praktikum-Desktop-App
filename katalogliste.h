@@ -2,6 +2,7 @@
 #define KATALOGLISTE_H
 
 #include <vector>
+#include "katalogeintrag.h"
 using namespace std;
 
 class Katalogliste

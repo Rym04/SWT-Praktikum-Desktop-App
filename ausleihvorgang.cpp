@@ -1,7 +1,10 @@
 #include "ausleihvorgang.h"
 
+//zu Versuchszwecken
+Ausleihvorgang::Ausleihvorgang(){}
+
 Ausleihvorgang::Ausleihvorgang(string bestellungsId, Ausleihender ausleihender, Status status,
-                               Katalogliste medien, tm datum, tm datumFertig)
+                               QList<Katalogeintrag> medien, tm datum, tm datumFertig)
 {
         this->bestellungsId = bestellungsId;
         this->ausleihender = ausleihender;
