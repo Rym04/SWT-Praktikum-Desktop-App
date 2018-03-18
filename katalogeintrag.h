@@ -1,48 +1,40 @@
 #ifndef KATALOGEINTRAG_H
 #define KATALOGEINTRAG_H
 
-#include <ctime>
+#include <QString>
+
+using namespace std;
 
 class Katalogeintrag
 {
-public:
-    string dokumentId;
-    string dokumentAutoren[];
-    int jahr;
-    int revision;
-    int buchband;
-    int zustand;
-    string titel;
-    string untertitel;
-    string beschreibung;
-    string copyright;
-    string dokumentart;
-    int ausfertigung;
-    string konferenz;
-    string sammelbandAutoren[];
-    string titel_sammelband;
-    string zeitschrift;
-    string ort;
-    string verlag; //in ER-Diagramm "veroeffentlicher"
-    string seiten;
-    int bestand;
-    string notizen;
-    string kommentar;
-    tm aenderungsdatum; //aus ctime, Date gibt es in C++ nicht
+   public:
+      int dokumentId;
+      int jahr;
+      int revision;
+      int buchband;
+      int auflage;
+      int zustand;
+      QString copyright;
+      QString dokumentart;
+      QString zeitschrift;
+      QString erscheinungsort;
+      QString konferenz;
+      QString verlag;
+      QString seiten;
+      int bestand;
+      QString titelSammelband;
+      QString aenderungsdatum;
+      QString titel;
+      QString untertitel;
+      QString beschreibung;
+      QString notizen;
+      QString kommentar;
+      QString ordnerpfad;
 
-    Katalogeintrag(string dokumentId, string dokumentAutoren[], int jahr,
-                                   int revision, int buchband, int zustand, string titel,
-                                   string untertitel, string beschreibung, string copyright,
-                                   string dokumentart, int ausfertigung, string konferenz,
-                                   string sammelbandAutoren[], int anzahlSammelbandAutoren,
-                                   string titel_sammelband, string zeitschrift, string ort,
-                                   string verlag, string seiten, int bestand, string notizen,
-                                   string kommentar, tm aenderungsdatum);
-
-    Katalogeintrag(string dokumentId, string dokumentAutoren[],
-                                   int anzahlDokumentAutoren, int jahr, int revision, int buchband,
-                                   int zustand, string titel, string copyright, int ausfertigung,
-                                   int bestand, string notizen, string kommentar, tm aenderungsdatum);
+      Katalogeintrag();
+      Katalogeintrag(const int, const int&, const int&, const int&, const int&, const int&, const QString&, const QString&,
+                     const QString&, const QString&, const QString&, const QString&, const QString&, const int&, const QString&,
+                     const QString&, const QString&, const QString&, const QString&, const QString&, const QString&, const QString&);
 };
 
-#endif // KATALOGEINTRAG_H
+#endif   // KATALOGEINTRAG_H
